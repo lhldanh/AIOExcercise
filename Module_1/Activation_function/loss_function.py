@@ -2,7 +2,7 @@ import math
 import numpy as np
 
 def mae_loss(y, y_hat):
-    integrand = [y[i] - y_hat[i] for i in range(0, len(y))]
+    integrand = [math.abs(y[i] - y_hat[i]) for i in range(0, len(y))]
     return 1 / len(y) * sum(integrand)
 
 def mse_loss(y, y_hat):

@@ -1,3 +1,4 @@
+import math
 def f1_score(tp, fp, fn):
 
     if (tp <= 0 or fp <= 0 or fn <= 0):
@@ -16,5 +17,5 @@ def f1_score(tp, fp, fn):
 
     return (prescision, recall, f1_score)
 
-print(f1_score(tp = 0, fp = 3, fn = 4))
+print(round(f1_score(tp = 2, fp = 4, fn = 5)[2], 2))
         
