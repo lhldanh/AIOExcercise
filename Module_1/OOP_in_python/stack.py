@@ -38,8 +38,7 @@ print("Top element:", test_stack.top())
 test_stack.push(30)
 print("Is the stack full?", test_stack.is_full())
 test_stack.push(40)  # Full
-print("Element popped:", test_stack.pop())
-print("Element popped:", test_stack.pop())
-print("Element popped:", test_stack.pop())
+for i in range(3):
+    test_stack.pop()
 print("Element popped:", test_stack.pop())  # Empty
 print("Is the stack empty?", test_stack.is_empty())
